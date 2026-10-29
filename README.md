@@ -152,8 +152,6 @@ Apple does **not** allow apps (including web apps) to read the iPhone's system c
 - **Windows → iPhone:** Fully automatic. PC text appears on iPhone instantly.
 - **iPhone → Windows:** You must open the iPhone app, type/paste text, and tap **Send**.
 
-For a fully silent native iPhone app (background clipboard access), you would need a Mac, Xcode, and a $99/year Apple Developer account. The PWA approach above is the closest no-Apple-account solution.
-
 ---
 
 ## Troubleshooting
