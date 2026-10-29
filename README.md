@@ -56,12 +56,24 @@ The client now watches your Windows clipboard silently. Text you copy on Windows
 
 ### Make it start automatically with Windows (optional but recommended)
 
-Run `setup-startup.bat` once (as a normal user) from the `windows-client` folder. It adds a shortcut to your Windows Startup folder so the client launches every time you log in:
+**Option A: Startup folder (client only)**
+Run `setup-startup.bat` once from the `windows-client` folder. It adds a shortcut to your Windows Startup folder so the client launches every time you log in:
 
 ```bash
 cd windows-client
 setup-startup.bat
 ```
+
+**Option B: PM2 (server + client, recommended for background)**
+Install PM2 globally, then use the included scripts:
+
+```bash
+npm install -g pm2
+pm2 start ecosystem.config.js
+pm2 save
+```
+
+Then create a Windows Task Scheduler task to run `start-pm2.ps1` at log on, so both apps restore automatically after a reboot.
 
 ---
 

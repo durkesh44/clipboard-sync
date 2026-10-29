@@ -205,7 +205,7 @@
   findPcBtn.addEventListener('click', () => {
     setSetupStatus('Looking for PC on your Wi-Fi…', '');
     // Try common private IP ranges quickly
-    const prefixes = ['192.168.1.', '192.168.0.', '10.0.0.'];
+    const prefixes = ['192.168.1.', '192.168.0.', '10.0.0.', '172.16.'];
     let tried = 0;
     let found = false;
 

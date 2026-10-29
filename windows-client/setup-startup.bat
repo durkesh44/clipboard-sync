@@ -2,7 +2,7 @@
 :: Adds Clipboard Sync to Windows Startup so it runs automatically on boot
 set "SCRIPT_PATH=%~dp0start.bat"
 set "STARTUP_DIR=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"
-set "SHORTCUT=%STARTUP%\Clipboard Sync.lnk"
+set "SHORTCUT=%STARTUP_DIR%\Clipboard Sync.lnk"
 
 if not exist "%STARTUP_DIR%\" mkdir "%STARTUP_DIR%"
 
