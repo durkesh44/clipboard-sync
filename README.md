@@ -123,7 +123,25 @@ Now "Clipboard Sync" opens like a real app with one tap.
 - Press `Win + R`, type `cmd`, enter `ipconfig`
 - Look for **IPv4 Address** under your Wi-Fi adapter (e.g. `192.168.1.10`)
 
-> **Note:** Your PC's IP address can change if your router restarts (DHCP). If the iPhone suddenly can't connect, run `ipconfig` again to check for a new address.
+> **⚠️ IP Address Warning:** Your PC's IP address can change if your router restarts (DHCP). If the iPhone suddenly can't connect, run `ipconfig` again to check for a new address.
+
+## Set a Static IP (Recommended — so it never changes)
+
+To avoid the iPhone losing connection when your IP changes, set a static IP on your Windows PC:
+
+1. Press `Win + R`, type `ncpa.cpl`, press Enter
+2. Right-click your active Wi-Fi or Ethernet adapter → **Properties**
+3. Select **Internet Protocol Version 4 (TCP/IPv4)** → click **Properties**
+4. Choose **Use the following IP address:**
+   - **IP address:** `192.168.1.100` (or any address in your router's range, e.g. `192.168.1.50`)
+   - **Subnet mask:** `255.255.255.0`
+   - **Default gateway:** Your router's IP (usually `192.168.1.1` — check `ipconfig` for "Default Gateway")
+   - **Preferred DNS server:** `8.8.8.8` (Google) or your router's IP
+5. Click **OK** → **OK** → Close
+
+Now your PC will always have the same IP, and the iPhone won't lose connection after router restarts.
+
+> **Tip:** Make sure the static IP you choose is outside your router's DHCP range to avoid conflicts. Check your router settings if unsure.
 
 ---
 
