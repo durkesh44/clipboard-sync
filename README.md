@@ -22,13 +22,25 @@ No sync codes. No typing IPs every time. The iPhone remembers your PC after the 
 
 ## Step 1: Start the server on your PC
 
-Open a terminal in the `server` folder:
+Open a terminal (PowerShell, CMD, or Git Bash) in the `server` folder:
 
 ```bash
 cd server
 npm install   # first time only
 npm start
 ```
+
+Or double-click `start-server.bat`.
+
+You'll see output like:
+
+```
+ Network: http://192.168.1.10:3000
+```
+
+Keep this terminal window open (or minimize it). The server must be running for sync to work.
+
+> **Important:** You need **two terminals open at the same time** — one for the server, one for the Windows client.
 
 You'll see output like:
 
@@ -42,7 +54,7 @@ Keep this terminal window open (or minimize it). The server must be running for 
 
 ## Step 2: Run the Windows client (background)
 
-Open a **second** terminal in the `windows-client` folder:
+Open a **second terminal** (separate from the server terminal) in the `windows-client` folder:
 
 ```bash
 cd windows-client
@@ -51,6 +63,8 @@ node client.js
 ```
 
 Or just double-click `start.bat`.
+
+The client now watches your Windows clipboard silently. Text you copy on Windows will appear on the iPhone automatically.
 
 The client now watches your Windows clipboard silently. Text you copy on Windows will appear on the iPhone automatically.
 
@@ -108,6 +122,8 @@ Now "Clipboard Sync" opens like a real app with one tap.
 
 - Press `Win + R`, type `cmd`, enter `ipconfig`
 - Look for **IPv4 Address** under your Wi-Fi adapter (e.g. `192.168.1.10`)
+
+> **Note:** Your PC's IP address can change if your router restarts (DHCP). If the iPhone suddenly can't connect, run `ipconfig` again to check for a new address.
 
 ---
 

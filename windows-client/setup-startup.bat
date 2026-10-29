@@ -10,4 +10,3 @@ powershell -Command "$WshShell = New-Object -comObject WScript.Shell; $Shortcut 
 
 echo Clipboard Sync has been added to Windows Startup.
 echo It will now start automatically when you log in.
-pause
