@@ -1,0 +1,18 @@
+{
+  "name": "Clipboard Sync",
+  "short_name": "Clipboard",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiBmaWxsPSIjMGYxNzJhIiByeD0iMzIiLz4KPHBhdGggZmlsbD0id2hpdGUiIGQ9Ik05NiAxMTMuNDNjLTguNDQgMC0xNS4yNyA2LjgzLTE1LjI3IDE5LjMxczYuODMgMTkuMzEgMTUuMjcgMTkuMzEgMTUuMjctNi44MyAxNS4yNy0xOS4zMS02LjgzLTE5LjMxLTE1LjI3LTE5LjMxek05NiAxMzYuNDJjLTYuNjMgMC0xMi01LjM3LTEyLTEyczUuMzctMTIgMTItMTIgMTIgNS4zNyAxMiAxMi01LjM3IDEyLTEyIDEyem0wLTIxLjY1Yy01LjM4IDAtOS44NiA0LjQ4LTkuODYgOS44NiAwIDUuMzggNC40OCA5Ljg2IDkuODYgOS44NiA1LjM4IDAgOS44Ni00LjQ4IDkuODYtOS44NiAwLTUuMzgtNC40OC05Ljg2LTkuODYtOS44NnoiLz4KPC9zdmc+",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
