@@ -22,10 +22,10 @@ No sync codes. No typing IPs every time. The iPhone remembers your PC after the 
 
 ## Step 1: Start the server on your PC
 
-Open a terminal (PowerShell or Command Prompt):
+Open a terminal in the `server` folder:
 
 ```bash
-cd "C:\Users\durke\Documents\Default Project\clipboard-sync\server"
+cd server
 npm install   # first time only
 npm start
 ```
@@ -42,10 +42,10 @@ Keep this terminal window open (or minimize it). The server must be running for 
 
 ## Step 2: Run the Windows client (background)
 
-Open a **second** terminal on the same PC:
+Open a **second** terminal in the `windows-client` folder:
 
 ```bash
-cd "C:\Users\durke\Documents\Default Project\clipboard-sync\windows-client"
+cd windows-client
 npm install   # first time only
 node client.js
 ```
@@ -56,10 +56,10 @@ The client now watches your Windows clipboard silently. Text you copy on Windows
 
 ### Make it start automatically with Windows (optional but recommended)
 
-Run `setup-startup.bat` once (as a normal user). It adds a shortcut to your Windows Startup folder so the client launches every time you log in:
+Run `setup-startup.bat` once (as a normal user) from the `windows-client` folder. It adds a shortcut to your Windows Startup folder so the client launches every time you log in:
 
 ```bash
-cd "C:\Users\durke\Documents\Default Project\clipboard-sync\windows-client"
+cd windows-client
 setup-startup.bat
 ```
 
