@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: 'clipboard-server',
-      cwd: 'C:\\Users\\durke\\Documents\\Default Project\\clipboard-sync\\server',
+      cwd: './server',
       script: 'server.js',
       instances: 1,
       autorestart: true,
@@ -14,7 +14,7 @@ module.exports = {
     },
     {
       name: 'clipboard-client',
-      cwd: 'C:\\Users\\durke\\Documents\\Default Project\\clipboard-sync\\windows-client',
+      cwd: './windows-client',
       script: 'client.js',
       instances: 1,
       autorestart: true,
