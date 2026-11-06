@@ -66,28 +66,18 @@ Or just double-click `start.bat`.
 
 The client now watches your Windows clipboard silently. Text you copy on Windows will appear on the iPhone automatically.
 
-The client now watches your Windows clipboard silently. Text you copy on Windows will appear on the iPhone automatically.
+### Make it start automatically with Windows (recommended)
 
-### Make it start automatically with Windows (optional but recommended)
-
-**Option A: Startup folder (client only)**
-Run `setup-startup.bat` once from the `windows-client` folder. It adds a shortcut to your Windows Startup folder so the client launches every time you log in:
+Run `add-to-startup.bat` **once** (as a normal user, not Administrator). It adds a shortcut to your Windows Startup folder so both the server and client launch automatically every time you log in:
 
 ```bash
-cd windows-client
-setup-startup.bat
+cd clipboard-sync
+add-to-startup.bat
 ```
 
-**Option B: PM2 (server + client, recommended for background)**
-Install PM2 globally, then use the included scripts:
+After running this, your clipboard sync will start automatically on every reboot — no need to open terminals manually.
 
-```bash
-npm install -g pm2
-pm2 start ecosystem.config.js
-pm2 save
-```
-
-Then create a Windows Task Scheduler task to run `start-pm2.ps1` at log on, so both apps restore automatically after a reboot.
+> **Important:** After reboot, wait ~20 seconds for both apps to start, then open the iPhone app.
 
 ---
 
